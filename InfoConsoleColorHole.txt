@@ -1,1 +1,8 @@
 Jest problem z ignorowaniem plików wpisanych w .gitignore.txt
+
+Doda³em:
+
+*kolorowanie UserPattern
+*kolorowanie RectPattern
+*Wyj¹tek je¿eli program nie wykryje ¿adnego hola\
+*Wyj¹tek gdy nie bêdzie jakiegoœ z innych elementów, aby kod siê nie wykonywa³

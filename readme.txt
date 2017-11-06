@@ -1,1 +1,5 @@
-Change 1 Update all element to repositoryfor ConsoleColorHole
+Special program to change color of holes in CATIA.
+
+New Update
+
+Version 1.1 - Now you can change color for UserPattern and RectPattern connected with your Holes.
