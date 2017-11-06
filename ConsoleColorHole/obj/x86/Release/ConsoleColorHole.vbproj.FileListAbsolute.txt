@@ -16,3 +16,19 @@ C:\Users\RWSwiss\documents\visual studio 2010\Projects\ConsoleColorHole\ConsoleC
 C:\Users\RWSwiss\documents\visual studio 2010\Projects\ConsoleColorHole\ConsoleColorHole\obj\x86\Release\ConsoleColorHole 1.0.exe
 C:\Users\RWSwiss\documents\visual studio 2010\Projects\ConsoleColorHole\ConsoleColorHole\obj\x86\Release\ConsoleColorHole 1.0.xml
 C:\Users\RWSwiss\documents\visual studio 2010\Projects\ConsoleColorHole\ConsoleColorHole\obj\x86\Release\ConsoleColorHole 1.0.pdb
+E:\Dokumenty\Informatyka\Git\ProjektsVisualStudio\ConsoleColorHole\ConsoleColorHole\bin\Release\CATIAMaterial.ico
+E:\Dokumenty\Informatyka\Git\ProjektsVisualStudio\ConsoleColorHole\ConsoleColorHole\bin\Release\CoreModule.vb
+E:\Dokumenty\Informatyka\Git\ProjektsVisualStudio\ConsoleColorHole\ConsoleColorHole\obj\x86\Release\Interop.DNBASY.dll
+E:\Dokumenty\Informatyka\Git\ProjektsVisualStudio\ConsoleColorHole\ConsoleColorHole\obj\x86\Release\Interop.INFITF.dll
+E:\Dokumenty\Informatyka\Git\ProjektsVisualStudio\ConsoleColorHole\ConsoleColorHole\obj\x86\Release\Interop.MECMOD.dll
+E:\Dokumenty\Informatyka\Git\ProjektsVisualStudio\ConsoleColorHole\ConsoleColorHole\obj\x86\Release\Interop.PARTITF.dll
+E:\Dokumenty\Informatyka\Git\ProjektsVisualStudio\ConsoleColorHole\ConsoleColorHole\obj\x86\Release\Interop.ProductStructureTypeLib.dll
+E:\Dokumenty\Informatyka\Git\ProjektsVisualStudio\ConsoleColorHole\ConsoleColorHole\obj\x86\Release\ConsoleColorHole.vbproj.ResolveComReference.cache
+E:\Dokumenty\Informatyka\Git\ProjektsVisualStudio\ConsoleColorHole\ConsoleColorHole\obj\x86\Release\ConsoleColorHole.Resources.resources
+E:\Dokumenty\Informatyka\Git\ProjektsVisualStudio\ConsoleColorHole\ConsoleColorHole\obj\x86\Release\ConsoleColorHole.vbproj.GenerateResource.Cache
+E:\Dokumenty\Informatyka\Git\ProjektsVisualStudio\ConsoleColorHole\ConsoleColorHole\bin\Release\ConsoleColorHole 1.1.exe
+E:\Dokumenty\Informatyka\Git\ProjektsVisualStudio\ConsoleColorHole\ConsoleColorHole\bin\Release\ConsoleColorHole 1.1.pdb
+E:\Dokumenty\Informatyka\Git\ProjektsVisualStudio\ConsoleColorHole\ConsoleColorHole\bin\Release\ConsoleColorHole 1.1.xml
+E:\Dokumenty\Informatyka\Git\ProjektsVisualStudio\ConsoleColorHole\ConsoleColorHole\obj\x86\Release\ConsoleColorHole 1.1.exe
+E:\Dokumenty\Informatyka\Git\ProjektsVisualStudio\ConsoleColorHole\ConsoleColorHole\obj\x86\Release\ConsoleColorHole 1.1.xml
+E:\Dokumenty\Informatyka\Git\ProjektsVisualStudio\ConsoleColorHole\ConsoleColorHole\obj\x86\Release\ConsoleColorHole 1.1.pdb

@@ -15,3 +15,19 @@ C:\Users\RWSwiss\documents\visual studio 2010\Projects\ConsoleColorHole\ConsoleC
 C:\Users\RWSwiss\documents\visual studio 2010\Projects\ConsoleColorHole\ConsoleColorHole\obj\x86\Debug\ConsoleColorHole.exe
 C:\Users\RWSwiss\documents\visual studio 2010\Projects\ConsoleColorHole\ConsoleColorHole\obj\x86\Debug\ConsoleColorHole.xml
 C:\Users\RWSwiss\documents\visual studio 2010\Projects\ConsoleColorHole\ConsoleColorHole\obj\x86\Debug\ConsoleColorHole.pdb
+E:\Dokumenty\Informatyka\Git\ProjektsVisualStudio\ConsoleColorHole\ConsoleColorHole\obj\x86\Debug\Interop.DNBASY.dll
+E:\Dokumenty\Informatyka\Git\ProjektsVisualStudio\ConsoleColorHole\ConsoleColorHole\obj\x86\Debug\Interop.INFITF.dll
+E:\Dokumenty\Informatyka\Git\ProjektsVisualStudio\ConsoleColorHole\ConsoleColorHole\obj\x86\Debug\Interop.MECMOD.dll
+E:\Dokumenty\Informatyka\Git\ProjektsVisualStudio\ConsoleColorHole\ConsoleColorHole\obj\x86\Debug\Interop.PARTITF.dll
+E:\Dokumenty\Informatyka\Git\ProjektsVisualStudio\ConsoleColorHole\ConsoleColorHole\obj\x86\Debug\Interop.ProductStructureTypeLib.dll
+E:\Dokumenty\Informatyka\Git\ProjektsVisualStudio\ConsoleColorHole\ConsoleColorHole\obj\x86\Debug\ConsoleColorHole.vbproj.ResolveComReference.cache
+E:\Dokumenty\Informatyka\Git\ProjektsVisualStudio\ConsoleColorHole\ConsoleColorHole\bin\Debug\CATIAMaterial.ico
+E:\Dokumenty\Informatyka\Git\ProjektsVisualStudio\ConsoleColorHole\ConsoleColorHole\bin\Debug\CoreModule.vb
+E:\Dokumenty\Informatyka\Git\ProjektsVisualStudio\ConsoleColorHole\ConsoleColorHole\bin\Debug\ConsoleColorHole 1.1.exe
+E:\Dokumenty\Informatyka\Git\ProjektsVisualStudio\ConsoleColorHole\ConsoleColorHole\bin\Debug\ConsoleColorHole 1.1.pdb
+E:\Dokumenty\Informatyka\Git\ProjektsVisualStudio\ConsoleColorHole\ConsoleColorHole\bin\Debug\ConsoleColorHole 1.1.xml
+E:\Dokumenty\Informatyka\Git\ProjektsVisualStudio\ConsoleColorHole\ConsoleColorHole\obj\x86\Debug\ConsoleColorHole.Resources.resources
+E:\Dokumenty\Informatyka\Git\ProjektsVisualStudio\ConsoleColorHole\ConsoleColorHole\obj\x86\Debug\ConsoleColorHole.vbproj.GenerateResource.Cache
+E:\Dokumenty\Informatyka\Git\ProjektsVisualStudio\ConsoleColorHole\ConsoleColorHole\obj\x86\Debug\ConsoleColorHole 1.1.exe
+E:\Dokumenty\Informatyka\Git\ProjektsVisualStudio\ConsoleColorHole\ConsoleColorHole\obj\x86\Debug\ConsoleColorHole 1.1.xml
+E:\Dokumenty\Informatyka\Git\ProjektsVisualStudio\ConsoleColorHole\ConsoleColorHole\obj\x86\Debug\ConsoleColorHole 1.1.pdb
