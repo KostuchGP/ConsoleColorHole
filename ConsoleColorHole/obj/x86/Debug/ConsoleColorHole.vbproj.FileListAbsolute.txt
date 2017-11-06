@@ -1,0 +1,17 @@
+C:\Users\RWSwiss\documents\visual studio 2010\Projects\ConsoleColorHole\ConsoleColorHole\obj\x86\Debug\Interop.CATAssemblyTypeLib.dll
+C:\Users\RWSwiss\documents\visual studio 2010\Projects\ConsoleColorHole\ConsoleColorHole\obj\x86\Debug\Interop.DNBASY.dll
+C:\Users\RWSwiss\documents\visual studio 2010\Projects\ConsoleColorHole\ConsoleColorHole\obj\x86\Debug\Interop.INFITF.dll
+C:\Users\RWSwiss\documents\visual studio 2010\Projects\ConsoleColorHole\ConsoleColorHole\obj\x86\Debug\Interop.KnowledgewareTypeLib.dll
+C:\Users\RWSwiss\documents\visual studio 2010\Projects\ConsoleColorHole\ConsoleColorHole\obj\x86\Debug\Interop.MECMOD.dll
+C:\Users\RWSwiss\documents\visual studio 2010\Projects\ConsoleColorHole\ConsoleColorHole\obj\x86\Debug\Interop.PARTITF.dll
+C:\Users\RWSwiss\documents\visual studio 2010\Projects\ConsoleColorHole\ConsoleColorHole\obj\x86\Debug\Interop.ProductStructureTypeLib.dll
+C:\Users\RWSwiss\documents\visual studio 2010\Projects\ConsoleColorHole\ConsoleColorHole\obj\x86\Debug\ConsoleColorHole.vbproj.ResolveComReference.cache
+C:\Users\RWSwiss\documents\visual studio 2010\Projects\ConsoleColorHole\ConsoleColorHole\bin\Debug\CoreModule.vb
+C:\Users\RWSwiss\documents\visual studio 2010\Projects\ConsoleColorHole\ConsoleColorHole\bin\Debug\ConsoleColorHole.exe
+C:\Users\RWSwiss\documents\visual studio 2010\Projects\ConsoleColorHole\ConsoleColorHole\bin\Debug\ConsoleColorHole.pdb
+C:\Users\RWSwiss\documents\visual studio 2010\Projects\ConsoleColorHole\ConsoleColorHole\bin\Debug\ConsoleColorHole.xml
+C:\Users\RWSwiss\documents\visual studio 2010\Projects\ConsoleColorHole\ConsoleColorHole\obj\x86\Debug\ConsoleColorHole.Resources.resources
+C:\Users\RWSwiss\documents\visual studio 2010\Projects\ConsoleColorHole\ConsoleColorHole\obj\x86\Debug\ConsoleColorHole.vbproj.GenerateResource.Cache
+C:\Users\RWSwiss\documents\visual studio 2010\Projects\ConsoleColorHole\ConsoleColorHole\obj\x86\Debug\ConsoleColorHole.exe
+C:\Users\RWSwiss\documents\visual studio 2010\Projects\ConsoleColorHole\ConsoleColorHole\obj\x86\Debug\ConsoleColorHole.xml
+C:\Users\RWSwiss\documents\visual studio 2010\Projects\ConsoleColorHole\ConsoleColorHole\obj\x86\Debug\ConsoleColorHole.pdb

@@ -1,0 +1,18 @@
+C:\Users\RWSwiss\documents\visual studio 2010\Projects\ConsoleColorHole\ConsoleColorHole\bin\Release\CoreModule.vb
+C:\Users\RWSwiss\documents\visual studio 2010\Projects\ConsoleColorHole\ConsoleColorHole\obj\x86\Release\Interop.CATAssemblyTypeLib.dll
+C:\Users\RWSwiss\documents\visual studio 2010\Projects\ConsoleColorHole\ConsoleColorHole\obj\x86\Release\Interop.DNBASY.dll
+C:\Users\RWSwiss\documents\visual studio 2010\Projects\ConsoleColorHole\ConsoleColorHole\obj\x86\Release\Interop.INFITF.dll
+C:\Users\RWSwiss\documents\visual studio 2010\Projects\ConsoleColorHole\ConsoleColorHole\obj\x86\Release\Interop.KnowledgewareTypeLib.dll
+C:\Users\RWSwiss\documents\visual studio 2010\Projects\ConsoleColorHole\ConsoleColorHole\obj\x86\Release\Interop.MECMOD.dll
+C:\Users\RWSwiss\documents\visual studio 2010\Projects\ConsoleColorHole\ConsoleColorHole\obj\x86\Release\Interop.PARTITF.dll
+C:\Users\RWSwiss\documents\visual studio 2010\Projects\ConsoleColorHole\ConsoleColorHole\obj\x86\Release\Interop.ProductStructureTypeLib.dll
+C:\Users\RWSwiss\documents\visual studio 2010\Projects\ConsoleColorHole\ConsoleColorHole\obj\x86\Release\ConsoleColorHole.vbproj.ResolveComReference.cache
+C:\Users\RWSwiss\documents\visual studio 2010\Projects\ConsoleColorHole\ConsoleColorHole\obj\x86\Release\ConsoleColorHole.Resources.resources
+C:\Users\RWSwiss\documents\visual studio 2010\Projects\ConsoleColorHole\ConsoleColorHole\obj\x86\Release\ConsoleColorHole.vbproj.GenerateResource.Cache
+C:\Users\RWSwiss\documents\visual studio 2010\Projects\ConsoleColorHole\ConsoleColorHole\bin\Release\CATIAMaterial.ico
+C:\Users\RWSwiss\documents\visual studio 2010\Projects\ConsoleColorHole\ConsoleColorHole\bin\Release\ConsoleColorHole 1.0.exe
+C:\Users\RWSwiss\documents\visual studio 2010\Projects\ConsoleColorHole\ConsoleColorHole\bin\Release\ConsoleColorHole 1.0.pdb
+C:\Users\RWSwiss\documents\visual studio 2010\Projects\ConsoleColorHole\ConsoleColorHole\bin\Release\ConsoleColorHole 1.0.xml
+C:\Users\RWSwiss\documents\visual studio 2010\Projects\ConsoleColorHole\ConsoleColorHole\obj\x86\Release\ConsoleColorHole 1.0.exe
+C:\Users\RWSwiss\documents\visual studio 2010\Projects\ConsoleColorHole\ConsoleColorHole\obj\x86\Release\ConsoleColorHole 1.0.xml
+C:\Users\RWSwiss\documents\visual studio 2010\Projects\ConsoleColorHole\ConsoleColorHole\obj\x86\Release\ConsoleColorHole 1.0.pdb
