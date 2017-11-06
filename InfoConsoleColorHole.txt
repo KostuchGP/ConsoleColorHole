@@ -1,0 +1,1 @@
+Jest problem z ignorowaniem plików wpisanych w .gitignore.txt
