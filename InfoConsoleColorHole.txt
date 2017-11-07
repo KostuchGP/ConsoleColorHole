@@ -21,3 +21,15 @@ WPROWADZONE
 
 * Aby nie zmienial elementów z liba
 :sciezka dostepu do path danego elementu, tego co jest LeafProductem
+ If InStr(1, openDoc.Path, "pp") = 0 Then
+end if
+
+openDoc.Path
+
+openDoc As INFITF.Document
+
+            Dim documents1 As Documents
+            documents1 = CATIA.Documents
+
+            Dim partDocument1 As MECMOD.PartDocument
+            partDocument1 = documents1.Item(arrayPomocneHole(InxSel, 1) & ".CATPart")
