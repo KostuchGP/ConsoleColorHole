@@ -59,6 +59,7 @@ Module CoreModule
         Dim oSelection
         Dim visPropertySet As VisPropertySet
         Dim czyGwintowanyOtwor As CatHoleThreadingMode
+        Dim partDocumentToCheck As MECMOD.PartDocument
 
         oSelection = mainDoc.Selection
         oSelection.Clear()
@@ -71,13 +72,20 @@ Module CoreModule
 
         If ileHole = 0 Then Exit Sub
 
-        ReDim arrayPomocneHole(ileHole - 1, 3)
+        ReDim arrayPomocneHole(ileHole - 1, 4)
 
         'Ładowanie arrayPomocne
         For i = 0 To oSelection.Count - 1
             czyGwintowanyOtwor = oSelection.Item(i + 1).Value.ThreadingMode
-            arrayPomocneHole(i, 0) = oSelection.Item(i + 1).Value.Name
-            arrayPomocneHole(i, 1) = oSelection.Item(i + 1).LeafProduct.PartNumber
+            arrayPomocneHole(i, 0) = oSelection.Item(i + 1).Value.Name 'Nazwa np Hole.1
+            arrayPomocneHole(i, 1) = oSelection.Item(i + 1).LeafProduct.PartNumber 'Nazwa np 'Winkel
+            arrayPomocneHole(i, 4) = oSelection.Item(i + 1).Value.Parent.Parent.Name 'Nazwa np PartBody
+            partDocumentToCheck = CATIA.Documents.Item(arrayPomocneHole(i, 1) & ".CATPart")
+            If InStr(1, partDocumentToCheck.Path, "pp") = 1 Then
+                arrayPomocneHole(i, 3) = "Z poza zakresu"
+                GoTo OverHoleCheckingThreadingMode
+            End If
+
             If czyGwintowanyOtwor = CatHoleThreadingMode.catThreadedHoleThreading Then
                 'jeżeli hole jest z gwintem to:
                 arrayPomocneHole(i, 2) = oSelection.Item(i + 1).Value.HoleThreadDescription.Value ' tylko dla thread np M10
@@ -96,6 +104,9 @@ Module CoreModule
                     arrayPomocneHole(i, 3) = "Z poza zakresu"
                 End If
             End If
+
+OverHoleCheckingThreadingMode:
+
         Next
 
         'Druga Petla
@@ -115,7 +126,7 @@ Module CoreModule
             bodies1 = part1.Bodies
 
             Dim body1 As MECMOD.Body
-            body1 = bodies1.Item("PartBody")
+            body1 = bodies1.Item(arrayPomocneHole(InxSel, 4))
 
             Dim shapes1 As MECMOD.Shapes
             shapes1 = body1.Shapes
@@ -144,6 +155,7 @@ Module CoreModule
         Dim ileUserPattern As Integer
         Dim visPropertySet As VisPropertySet
         Dim czyGwintowanyOtwor As CatHoleThreadingMode
+        Dim partDocumentToCheck As MECMOD.PartDocument
 
         oSelection = mainDoc.Selection
         oSelection.Clear()
@@ -156,13 +168,20 @@ Module CoreModule
 
         If ileUserPattern = 0 Then Exit Sub
 
-        ReDim arrayPomocneUserPattern(ileUserPattern - 1, 3)
+        ReDim arrayPomocneUserPattern(ileUserPattern - 1, 4)
 
         'Ładowanie arrayPomocne
         For i = 0 To oSelection.Count - 1
             czyGwintowanyOtwor = oSelection.Item(i + 1).Value.ItemToCopy.ThreadingMode
             arrayPomocneUserPattern(i, 0) = oSelection.Item(i + 1).Value.Name
             arrayPomocneUserPattern(i, 1) = oSelection.Item(i + 1).LeafProduct.PartNumber
+            arrayPomocneUserPattern(i, 4) = oSelection.Item(i + 1).Value.ItemToCopy.Parent.Parent.Name 'Nazwa np PartBody
+            partDocumentToCheck = CATIA.Documents.Item(arrayPomocneUserPattern(i, 1) & ".CATPart")
+            If InStr(1, partDocumentToCheck.Path, "pp") = 1 Then
+                arrayPomocneUserPattern(i, 3) = "Z poza zakresu"
+                GoTo OverUserPatternCheckingThreadingMode
+            End If
+
             If czyGwintowanyOtwor = CatHoleThreadingMode.catThreadedHoleThreading Then
                 'jeżeli hole jest z gwintem to:
                 arrayPomocneUserPattern(i, 2) = oSelection.Item(i + 1).Value.ItemToCopy.HoleThreadDescription.Value ' tylko dla thread np M10
@@ -181,6 +200,9 @@ Module CoreModule
                     arrayPomocneUserPattern(i, 3) = "Z poza zakresu"
                 End If
             End If
+
+OverUserPatternCheckingThreadingMode:
+
         Next
 
         'Druga Petla
@@ -200,7 +222,7 @@ Module CoreModule
             bodies1 = part1.Bodies
 
             Dim body1 As MECMOD.Body
-            body1 = bodies1.Item("PartBody")
+            body1 = bodies1.Item(arrayPomocneUserPattern(InxSel, 4))
 
             Dim shapes1 As MECMOD.Shapes
             shapes1 = body1.Shapes
@@ -226,6 +248,7 @@ Module CoreModule
         Dim ileRectPattern As Integer
         Dim visPropertySet As VisPropertySet
         Dim czyGwintowanyOtwor As CatHoleThreadingMode
+        Dim partDocumentToCheck As MECMOD.PartDocument
 
         oSelection = mainDoc.Selection
         oSelection.Clear()
@@ -238,13 +261,19 @@ Module CoreModule
 
         If ileRectPattern = 0 Then Exit Sub
 
-        ReDim arrayPomocneRectPattern(ileRectPattern - 1, 3)
+        ReDim arrayPomocneRectPattern(ileRectPattern - 1, 4)
 
         'Ładowanie arrayPomocne
         For i = 0 To oSelection.Count - 1
             czyGwintowanyOtwor = oSelection.Item(i + 1).Value.ItemToCopy.ThreadingMode
             arrayPomocneRectPattern(i, 0) = oSelection.Item(i + 1).Value.Name
             arrayPomocneRectPattern(i, 1) = oSelection.Item(i + 1).LeafProduct.PartNumber
+            arrayPomocneRectPattern(i, 4) = oSelection.Item(i + 1).Value.ItemToCopy.Parent.Parent.Name 'Nazwa np PartBody
+            partDocumentToCheck = CATIA.Documents.Item(arrayPomocneRectPattern(i, 1) & ".CATPart")
+            If InStr(1, partDocumentToCheck.Path, "pp") = 1 Then
+                arrayPomocneRectPattern(i, 3) = "Z poza zakresu"
+                GoTo OverRectPatternCheckingThreadingMode
+            End If
             If czyGwintowanyOtwor = CatHoleThreadingMode.catThreadedHoleThreading Then
                 'jeżeli hole jest z gwintem to:
                 arrayPomocneRectPattern(i, 2) = oSelection.Item(i + 1).Value.ItemToCopy.HoleThreadDescription.Value ' tylko dla thread np M10
@@ -263,6 +292,9 @@ Module CoreModule
                     arrayPomocneRectPattern(i, 3) = "Z poza zakresu"
                 End If
             End If
+
+OverRectPatternCheckingThreadingMode:
+
         Next
 
         'Druga Petla
@@ -282,7 +314,7 @@ Module CoreModule
             bodies1 = part1.Bodies
 
             Dim body1 As MECMOD.Body
-            body1 = bodies1.Item("PartBody")
+            body1 = bodies1.Item(arrayPomocneRectPattern(InxSel, 4))
 
             Dim shapes1 As MECMOD.Shapes
             shapes1 = body1.Shapes

@@ -8,7 +8,7 @@ Imports System.Runtime.InteropServices
 
 ' Review the values of the assembly attributes
 
-<Assembly: AssemblyTitle("ConsoleColorHole 1.1")> 
+<Assembly: AssemblyTitle("ConsoleColorHole 1.3")> 
 <Assembly: AssemblyDescription("")> 
 <Assembly: AssemblyCompany("")> 
 <Assembly: AssemblyProduct("ConsoleColorHole")> 
