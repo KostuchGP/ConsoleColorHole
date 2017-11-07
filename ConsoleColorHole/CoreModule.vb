@@ -76,8 +76,11 @@ Module CoreModule
         'Ładowanie arrayPomocne
         For i = 0 To oSelection.Count - 1
             czyGwintowanyOtwor = oSelection.Item(i + 1).Value.ThreadingMode
-            arrayPomocneHole(i, 0) = oSelection.Item(i + 1).Value.Name
-            arrayPomocneHole(i, 1) = oSelection.Item(i + 1).LeafProduct.PartNumber
+            arrayPomocneHole(i, 0) = oSelection.Item(i + 1).Value.Name 'Nazwa np Hole.1
+            arrayPomocneHole(i, 1) = oSelection.Item(i + 1).LeafProduct.PartNumber 'Nazwa np 'Winkel
+
+            'Tu mam wstawić  If InStr(1, openDoc.Path, "pp") = 0 Then, muszę pobrać ście
+
             If czyGwintowanyOtwor = CatHoleThreadingMode.catThreadedHoleThreading Then
                 'jeżeli hole jest z gwintem to:
                 arrayPomocneHole(i, 2) = oSelection.Item(i + 1).Value.HoleThreadDescription.Value ' tylko dla thread np M10

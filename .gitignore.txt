@@ -1,2 +1,2 @@
-
+ConsoleColorHole/bin/Debug/ConsoleColorHole 1.1.vshost.exe.manifest
 ConsoleColorHole.suo
