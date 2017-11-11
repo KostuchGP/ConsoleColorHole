@@ -29,9 +29,9 @@ E:\Dokumenty\Informatyka\Git\ProjektsVisualStudio\ConsoleColorHole\ConsoleColorH
 C:\Users\RWSwiss\Documents\Visual Studio 2010\Projects\ConsoleColorHole\ConsoleColorHole\obj\x86\Release\ConsoleColorHole 1.1.exe
 C:\Users\RWSwiss\Documents\Visual Studio 2010\Projects\ConsoleColorHole\ConsoleColorHole\obj\x86\Release\ConsoleColorHole 1.1.xml
 C:\Users\RWSwiss\Documents\Visual Studio 2010\Projects\ConsoleColorHole\ConsoleColorHole\obj\x86\Release\ConsoleColorHole 1.1.pdb
-E:\Dokumenty\Informatyka\Git\ProjektsVisualStudio\ConsoleColorHole\ConsoleColorHole\bin\Release\ConsoleColorHole 1.3.exe
-E:\Dokumenty\Informatyka\Git\ProjektsVisualStudio\ConsoleColorHole\ConsoleColorHole\bin\Release\ConsoleColorHole 1.3.pdb
-E:\Dokumenty\Informatyka\Git\ProjektsVisualStudio\ConsoleColorHole\ConsoleColorHole\bin\Release\ConsoleColorHole 1.3.xml
-E:\Dokumenty\Informatyka\Git\ProjektsVisualStudio\ConsoleColorHole\ConsoleColorHole\obj\x86\Release\ConsoleColorHole 1.3.exe
-E:\Dokumenty\Informatyka\Git\ProjektsVisualStudio\ConsoleColorHole\ConsoleColorHole\obj\x86\Release\ConsoleColorHole 1.3.xml
-E:\Dokumenty\Informatyka\Git\ProjektsVisualStudio\ConsoleColorHole\ConsoleColorHole\obj\x86\Release\ConsoleColorHole 1.3.pdb
+E:\Dokumenty\Informatyka\Git\ProjektsVisualStudio\ConsoleColorHole\ConsoleColorHole\bin\Release\ConsoleColorHole 1.4.exe
+E:\Dokumenty\Informatyka\Git\ProjektsVisualStudio\ConsoleColorHole\ConsoleColorHole\bin\Release\ConsoleColorHole 1.4.pdb
+E:\Dokumenty\Informatyka\Git\ProjektsVisualStudio\ConsoleColorHole\ConsoleColorHole\bin\Release\ConsoleColorHole 1.4.xml
+E:\Dokumenty\Informatyka\Git\ProjektsVisualStudio\ConsoleColorHole\ConsoleColorHole\obj\x86\Release\ConsoleColorHole 1.4.exe
+E:\Dokumenty\Informatyka\Git\ProjektsVisualStudio\ConsoleColorHole\ConsoleColorHole\obj\x86\Release\ConsoleColorHole 1.4.xml
+E:\Dokumenty\Informatyka\Git\ProjektsVisualStudio\ConsoleColorHole\ConsoleColorHole\obj\x86\Release\ConsoleColorHole 1.4.pdb

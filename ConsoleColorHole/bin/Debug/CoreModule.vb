@@ -78,18 +78,13 @@ Module CoreModule
         For i = 0 To oSelection.Count - 1
             czyGwintowanyOtwor = oSelection.Item(i + 1).Value.ThreadingMode
             arrayPomocneHole(i, 0) = oSelection.Item(i + 1).Value.Name 'Nazwa np Hole.1
-            arrayPomocneHole(i, 1) = oSelection.Item(i + 1).LeafProduct.PartNumber 'Nazwa np 'Winkel
-            arrayPomocneHole(i, 4) = oSelection.Item(i + 1).Value.Parent.Parent.Name 'Nazwa np PartBody
-            partDocumentToCheck = CATIA.Documents.Item(arrayPomocneHole(i, 1) & ".CATPart")
-            If InStr(1, partDocumentToCheck.Path, "E") = 1 Then
+            arrayPomocneHole(i, 1) = oSelection.Item(i + 1).Value.Parent.Parent.Parent.Parent.Parent.Name 'Zmieniamy to na bezpośrednią nazwę pliku ]:->
+            arrayPomocneHole(i, 4) = oSelection.Item(i + 1).Value.Parent.Parent.Name 'Np PartBody / PartBody.1
+            partDocumentToCheck = CATIA.Documents.Item(arrayPomocneHole(i, 1))
+            If InStr(1, partDocumentToCheck.Path, "pp") = 1 Then
                 arrayPomocneHole(i, 3) = "Z poza zakresu"
-                On Error Resume Next
+                GoTo OverHoleCheckingThreadingMode
             End If
-
-            'Tu mam wstawić  If InStr(1, openDoc.Path, "pp") = 0 Then, muszę pobrać ście
-
-
-
 
             If czyGwintowanyOtwor = CatHoleThreadingMode.catThreadedHoleThreading Then
                 'jeżeli hole jest z gwintem to:
@@ -109,6 +104,9 @@ Module CoreModule
                     arrayPomocneHole(i, 3) = "Z poza zakresu"
                 End If
             End If
+
+OverHoleCheckingThreadingMode:
+
         Next
 
         'Druga Petla
@@ -119,7 +117,7 @@ Module CoreModule
             documents1 = CATIA.Documents
 
             Dim partDocument1 As MECMOD.PartDocument
-            partDocument1 = documents1.Item(arrayPomocneHole(InxSel, 1) & ".CATPart")
+            partDocument1 = documents1.Item(arrayPomocneHole(InxSel, 1))
 
             Dim part1 As MECMOD.Part
             part1 = partDocument1.Part
@@ -144,7 +142,8 @@ Module CoreModule
 
                 oSelection.VisProperties.SetRealColor(0, 255, 0, 0)
             ElseIf arrayPomocneHole(InxSel, 3) = "Z poza zakresu" Then
-
+                'USTAWIAM szary kolor dla innych otworów
+                oSelection.VisProperties.SetRealColor(210, 210, 255, 0)
                 resztaHole.Add(arrayPomocneHole(InxSel, 2))
             End If
         Next
@@ -157,6 +156,7 @@ Module CoreModule
         Dim ileUserPattern As Integer
         Dim visPropertySet As VisPropertySet
         Dim czyGwintowanyOtwor As CatHoleThreadingMode
+        Dim partDocumentToCheck As MECMOD.PartDocument
 
         oSelection = mainDoc.Selection
         oSelection.Clear()
@@ -175,8 +175,13 @@ Module CoreModule
         For i = 0 To oSelection.Count - 1
             czyGwintowanyOtwor = oSelection.Item(i + 1).Value.ItemToCopy.ThreadingMode
             arrayPomocneUserPattern(i, 0) = oSelection.Item(i + 1).Value.Name
-            arrayPomocneUserPattern(i, 1) = oSelection.Item(i + 1).LeafProduct.PartNumber
-            arrayPomocneUserPattern(i, 4) = oSelection.Item(i + 1).Value.ItemToCopy.Parent.Parent.Name.Value 'Nazwa np PartBody
+            arrayPomocneUserPattern(i, 1) = oSelection.Item(i + 1).Value.Parent.Parent.Parent.Parent.Parent.Name
+            arrayPomocneUserPattern(i, 4) = oSelection.Item(i + 1).Value.ItemToCopy.Parent.Parent.Name 'Nazwa np PartBody
+            partDocumentToCheck = CATIA.Documents.Item(arrayPomocneUserPattern(i, 1))
+            If InStr(1, partDocumentToCheck.Path, "pp") = 1 Then
+                arrayPomocneUserPattern(i, 3) = "Z poza zakresu"
+                GoTo OverUserPatternCheckingThreadingMode
+            End If
 
             If czyGwintowanyOtwor = CatHoleThreadingMode.catThreadedHoleThreading Then
                 'jeżeli hole jest z gwintem to:
@@ -196,6 +201,9 @@ Module CoreModule
                     arrayPomocneUserPattern(i, 3) = "Z poza zakresu"
                 End If
             End If
+
+OverUserPatternCheckingThreadingMode:
+
         Next
 
         'Druga Petla
@@ -206,7 +214,7 @@ Module CoreModule
             documents1 = CATIA.Documents
 
             Dim partDocument1 As MECMOD.PartDocument
-            partDocument1 = documents1.Item(arrayPomocneUserPattern(InxSel, 1) & ".CATPart")
+            partDocument1 = documents1.Item(arrayPomocneUserPattern(InxSel, 1))
 
             Dim part1 As MECMOD.Part
             part1 = partDocument1.Part
@@ -229,7 +237,8 @@ Module CoreModule
             ElseIf arrayPomocneUserPattern(InxSel, 3) = "Kolek" Then
                 oSelection.VisProperties.SetRealColor(0, 255, 0, 0)
             ElseIf arrayPomocneUserPattern(InxSel, 3) = "Z poza zakresu" Then
-                'Nic nie robi
+                'USTAWIAM szary kolor dla innych otworów
+                oSelection.VisProperties.SetRealColor(210, 210, 255, 0)
             End If
         Next
         oSelection.Clear()
@@ -241,6 +250,7 @@ Module CoreModule
         Dim ileRectPattern As Integer
         Dim visPropertySet As VisPropertySet
         Dim czyGwintowanyOtwor As CatHoleThreadingMode
+        Dim partDocumentToCheck As MECMOD.PartDocument
 
         oSelection = mainDoc.Selection
         oSelection.Clear()
@@ -259,9 +269,13 @@ Module CoreModule
         For i = 0 To oSelection.Count - 1
             czyGwintowanyOtwor = oSelection.Item(i + 1).Value.ItemToCopy.ThreadingMode
             arrayPomocneRectPattern(i, 0) = oSelection.Item(i + 1).Value.Name
-            arrayPomocneRectPattern(i, 1) = oSelection.Item(i + 1).LeafProduct.PartNumber
-            arrayPomocneRectPattern(i, 4) = oSelection.Item(i + 1).Value.ItemToCopy.Parent.Parent.Name.Value 'Nazwa np PartBody
-
+            arrayPomocneRectPattern(i, 1) = oSelection.Item(i + 1).Value.Parent.Parent.Parent.Parent.Parent.Name
+            arrayPomocneRectPattern(i, 4) = oSelection.Item(i + 1).Value.ItemToCopy.Parent.Parent.Name 'Nazwa np PartBody
+            partDocumentToCheck = CATIA.Documents.Item(arrayPomocneRectPattern(i, 1))
+            If InStr(1, partDocumentToCheck.Path, "pp") = 1 Then
+                arrayPomocneRectPattern(i, 3) = "Z poza zakresu"
+                GoTo OverRectPatternCheckingThreadingMode
+            End If
             If czyGwintowanyOtwor = CatHoleThreadingMode.catThreadedHoleThreading Then
                 'jeżeli hole jest z gwintem to:
                 arrayPomocneRectPattern(i, 2) = oSelection.Item(i + 1).Value.ItemToCopy.HoleThreadDescription.Value ' tylko dla thread np M10
@@ -280,6 +294,9 @@ Module CoreModule
                     arrayPomocneRectPattern(i, 3) = "Z poza zakresu"
                 End If
             End If
+
+OverRectPatternCheckingThreadingMode:
+
         Next
 
         'Druga Petla
@@ -290,7 +307,7 @@ Module CoreModule
             documents1 = CATIA.Documents
 
             Dim partDocument1 As MECMOD.PartDocument
-            partDocument1 = documents1.Item(arrayPomocneRectPattern(InxSel, 1) & ".CATPart")
+            partDocument1 = documents1.Item(arrayPomocneRectPattern(InxSel, 1))
 
             Dim part1 As MECMOD.Part
             part1 = partDocument1.Part
@@ -313,7 +330,8 @@ Module CoreModule
             ElseIf arrayPomocneRectPattern(InxSel, 3) = "Kolek" Then
                 oSelection.VisProperties.SetRealColor(0, 255, 0, 0)
             ElseIf arrayPomocneRectPattern(InxSel, 3) = "Z poza zakresu" Then
-                'Nic nie robi
+                'USTAWIAM szary kolor dla innych otworów
+                oSelection.VisProperties.SetRealColor(210, 210, 255, 0)
             End If
         Next
         oSelection.Clear()

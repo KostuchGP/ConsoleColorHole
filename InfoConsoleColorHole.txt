@@ -1,14 +1,11 @@
 Jest problem z ignorowaniem plików wpisanych w .gitignore.txt
 
-Dodalem:
+Zrobione:
 
 *kolorowanie UserPattern
 *kolorowanie RectPattern
 *Wyjatek jezeli program nie wykryje zadnego hola\
 *Wyjatek gdy nie bêdzie jakiegos z innych elementów, aby kod siê nie wykonywal
-
-Co trzeba zrobic:
-
 * Aby pobieral nazwe Body, w którym znajduje sie dany hole
 :sciezka dostepu do nazwy PartBody
 'Dla hola
@@ -17,19 +14,6 @@ arrayPomocneHole(i, 4) = oSelection.Item(i + 1).Value.Parent.Parent.Name.Value '
 arrayPomocneUserPattern(i, 2) = oSelection.Item(i + 1).Value.ItemToCopy.Parent.Parent.Name.Value 'Nazwa np PartBody
 'Dla RectPattern
 arrayPomocneRectPattern(i, 2) = oSelection.Item(i + 1).Value.ItemToCopy.Parent.Parent.Name.Value 'Nazwa np PartBody
-WPROWADZONE
-
 * Aby nie zmienial elementów z liba
-:sciezka dostepu do path danego elementu, tego co jest LeafProductem
- If InStr(1, openDoc.Path, "pp") = 0 Then
-end if
 
-openDoc.Path
-
-openDoc As INFITF.Document
-
-            Dim documents1 As Documents
-            documents1 = CATIA.Documents
-
-            Dim partDocument1 As MECMOD.PartDocument
-            partDocument1 = documents1.Item(arrayPomocneHole(InxSel, 1) & ".CATPart")
+Co trzeba zrobic:
