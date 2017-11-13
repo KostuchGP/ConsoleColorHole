@@ -173,12 +173,18 @@ OverHoleCheckingThreadingMode:
 
         'Ładowanie arrayPomocne
         For i = 0 To oSelection.Count - 1
-            czyGwintowanyOtwor = oSelection.Item(i + 1).Value.ItemToCopy.ThreadingMode
             arrayPomocneUserPattern(i, 0) = oSelection.Item(i + 1).Value.Name
             arrayPomocneUserPattern(i, 1) = oSelection.Item(i + 1).Value.Parent.Parent.Parent.Parent.Parent.Name
             arrayPomocneUserPattern(i, 4) = oSelection.Item(i + 1).Value.ItemToCopy.Parent.Parent.Name 'Nazwa np PartBody
             partDocumentToCheck = CATIA.Documents.Item(arrayPomocneUserPattern(i, 1))
             If InStr(1, partDocumentToCheck.Path, "pp") = 1 Then
+                arrayPomocneUserPattern(i, 3) = "Z poza zakresu"
+                GoTo OverUserPatternCheckingThreadingMode
+            End If
+
+            If InStr(1, oSelection.Item(i + 1).Value.ItemToCopy.Name, "Hole") = 1 Then
+                czyGwintowanyOtwor = oSelection.Item(i + 1).Value.ItemToCopy.ThreadingMode
+            Else
                 arrayPomocneUserPattern(i, 3) = "Z poza zakresu"
                 GoTo OverUserPatternCheckingThreadingMode
             End If
@@ -267,15 +273,23 @@ OverUserPatternCheckingThreadingMode:
 
         'Ładowanie arrayPomocne
         For i = 0 To oSelection.Count - 1
-            czyGwintowanyOtwor = oSelection.Item(i + 1).Value.ItemToCopy.ThreadingMode
             arrayPomocneRectPattern(i, 0) = oSelection.Item(i + 1).Value.Name
             arrayPomocneRectPattern(i, 1) = oSelection.Item(i + 1).Value.Parent.Parent.Parent.Parent.Parent.Name
             arrayPomocneRectPattern(i, 4) = oSelection.Item(i + 1).Value.ItemToCopy.Parent.Parent.Name 'Nazwa np PartBody
             partDocumentToCheck = CATIA.Documents.Item(arrayPomocneRectPattern(i, 1))
+
             If InStr(1, partDocumentToCheck.Path, "pp") = 1 Then
                 arrayPomocneRectPattern(i, 3) = "Z poza zakresu"
                 GoTo OverRectPatternCheckingThreadingMode
             End If
+
+            If InStr(1, oSelection.Item(i + 1).Value.ItemToCopy.Name, "Hole") = 1 Then
+                czyGwintowanyOtwor = oSelection.Item(i + 1).Value.ItemToCopy.ThreadingMode
+            Else
+                arrayPomocneRectPattern(i, 3) = "Z poza zakresu"
+                GoTo OverRectPatternCheckingThreadingMode
+            End If
+
             If czyGwintowanyOtwor = CatHoleThreadingMode.catThreadedHoleThreading Then
                 'jeżeli hole jest z gwintem to:
                 arrayPomocneRectPattern(i, 2) = oSelection.Item(i + 1).Value.ItemToCopy.HoleThreadDescription.Value ' tylko dla thread np M10
@@ -342,7 +356,7 @@ OverRectPatternCheckingThreadingMode:
         Dim sResult As String = ""
 
         For Each str In resztaHole
-            sResult &= str & Environment.NewLine
+            sResult &= "Ø" & str & " " ' & Environment.NewLine
         Next
         MsgBox("No colored holes: " & Environment.NewLine & sResult & Environment.NewLine & Environment.NewLine & "Colored: " & pomalowanychOtworow & " elements.")
 

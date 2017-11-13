@@ -16,4 +16,11 @@ arrayPomocneUserPattern(i, 2) = oSelection.Item(i + 1).Value.ItemToCopy.Parent.P
 arrayPomocneRectPattern(i, 2) = oSelection.Item(i + 1).Value.ItemToCopy.Parent.Parent.Name.Value 'Nazwa np PartBody
 * Aby nie zmienial elementów z liba
 
+*Dalem warunek sprawdzajacy 
+
 Co trzeba zrobic:
+* Za dlugo trwa kolorowanie
+* Elementy z liba niech wogole nie sprawdza, czy to sie da?
+* Jezeli mamy dwa takie same elementy, to zeby tylko w jednym zmienil
+* Jezeli rect pattern nie jest robiony na holu to jest error
+dalem warunek sprawdzajacy element z 
